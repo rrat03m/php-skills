@@ -13,13 +13,43 @@
 <body>
 
 		<ul>
-			
-			<?php foreach($person as $key => $feature) : ?>
+				
+			<li>
 
-				<li><strong><?= $key;?></strong> <?= $feature;?></li>
+				<strong>Name: </strong><?= $tasks['title']; ?>
+					
+			</li>
+
+			<li>
+
+				<strong>Due Date: </strong><?= $tasks['due']; ?>
+					
+			</li>			
+
+			<li>
+
+				<strong>Personal Responsible: </strong><?= $tasks['assigned_to']; ?>
+					
+			</li>
+
+			<li>
+
+				<strong>Status: </strong><?= $tasks['complete'] ? 'complete' : 'Incomplete'; ?>
+					
+			</li>					
+		</ul>
+
+		<ul>
+			
+			<?php foreach($tasks as $heading => $value) : ?>
+
+				<li>
+
+					<strong><?= ucwords($heading); ?>: </strong> <?= $value; ?>
+
+				</li>
 
 			<?php endforeach; ?>
-
 		</ul>
 
 </body>

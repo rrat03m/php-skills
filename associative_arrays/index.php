@@ -28,4 +28,19 @@ unset($person['age']);
 
 // die(var_dump($person));
 
+
+$tasks = [
+
+	'title' => 'Finish homework',
+
+	'due'   => 'today',
+
+	'assigned_to' => 'Rafael',
+
+	'complete' => false // if(!$completed) {}
+
+]; // title, due, assignned_to, completed
+
+
+
 require_once 'view.php';
