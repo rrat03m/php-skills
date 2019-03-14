@@ -1,5 +1,14 @@
 <?php
 
-$nome = htmlspecialchars($_GET['nome']);
+$nomes = [
+
+	"Fulano",
+
+	"Ciclano",
+
+	"Beltrano"
+
+];
+
 
 require_once 'view.php';

@@ -13,11 +13,13 @@
 <body>
 
 
-	<header>
+		<ul>
+			<?php foreach($nomes as $name) : ?>
 
-		<h1><?= $nome;?></h1>
+				<li><?= $name ?></li>
 
-	</header>
+			<?php endforeach ?>
+		</ul>
 
 
 </body>
