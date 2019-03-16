@@ -37,7 +37,7 @@ $tasks = [
 
 	'assigned_to' => 'Rafael',
 
-	'complete' => false // if(!$completed) {}
+	'completed' => true // if(!$completed) {}
 
 ]; // title, due, assignned_to, completed
 
